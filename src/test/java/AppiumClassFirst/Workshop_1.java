@@ -22,18 +22,12 @@ public class Workshop_1 {
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.0");
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
       desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\Mehmet\\Desktop\\mobile_testing\\src\\test\\java\\AppiumClassFirst\\APP\\Duolingo.apk");
-        // desiredCapabilities.setCapability("automationName","UiAutomator2");
-
-        // "appPackage": "com.google.android.calculator"
-        //"appActivity":  "com.android.calculator2.Calculator"
+        // yukarıdaki pathi kendinize göre ayarlayın. lütfen.
 
 
-      //desiredCapabilities.setCapability("appPackage", "com.google.android.calculator");
-        //desiredCapabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
-        //desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, true);
-        //URL url=new URL("http:127.0.0.1:4723/wd/hub");
+
         AndroidDriver<AndroidElement> driver=new AndroidDriver<>(new URL("http:127.0.0.1:4723/wd/hub"),desiredCapabilities);
-        //AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(new URL("http:127.0.0.1:4723/wd/hub"), desiredCapabilities);  */
+
         Thread.sleep(5000);
 }}
 
