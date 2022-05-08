@@ -47,7 +47,7 @@ public class Workshop_1 {
         getSome.click();
         Thread.sleep(4000);
         WebElement getStartTest = driver.findElementById("com.duolingo:id/primaryButton");
-        getStartTest.click();
+        getStartTest.click();/////
 
     }
 }
