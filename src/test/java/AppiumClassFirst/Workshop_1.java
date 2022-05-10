@@ -4,6 +4,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.Test;
+import org.junit.experimental.theories.Theories;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -11,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Workshop_1 {
+
 
     @Test
     public void test() throws MalformedURLException, InterruptedException {
@@ -24,9 +26,15 @@ public class Workshop_1 {
 
 
         AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http:127.0.0.1:4723/wd/hub"), desiredCapabilities);
+WebElement getStart=driver.findElementById("com.duolingo:id/introFlowNewUserButton");
+String yazi=getStart.getText();
+        System.out.println("yazi = " + yazi);
+        Thread.sleep(5000);
+        getStart.click();
 
         Thread.sleep(5000);
 
+/*
         WebElement getStarterd = driver.findElementById("com.duolingo:id/introFlowNewUserButton");
         getStarterd.click();
         Thread.sleep(3000);
@@ -48,7 +56,7 @@ public class Workshop_1 {
         Thread.sleep(4000);
         WebElement getStartTest = driver.findElementById("com.duolingo:id/primaryButton");
         getStartTest.click();/////
-
+*/
     }
 }
 
