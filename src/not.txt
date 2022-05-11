@@ -1,0 +1,13 @@
+dumpsys window windows | grep -E 'mCurrentFocus' =>com.duolingo/com.duolingo.app.LoginActivity
+
+Ayarlar->Sistem->Telefon Hakkinda->Gelistirici Secenekleri->OEM Kilidini Acm
+
+
+{
+  "platformName": "Android",
+  "platformVersion": "7.0",
+  "deviceName": "Pixel_2",
+  "automationName": "UiAutomator2",
+  "app": "C:\\Users\\User\\eclipse-workspace\\AppiumAutomation\\etsy.apk"
+}
+
