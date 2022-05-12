@@ -20,7 +20,7 @@ public class BrowserStackAndroid {
 
     public static void main(String args[]) throws MalformedURLException, InterruptedException {
         DesiredCapabilities caps = new DesiredCapabilities();
-
+        caps.setCapability("browserName", "android");
         caps.setCapability("device", "Samsung Galaxy S8 Plus");
         caps.setCapability("os_version", "7.0");
         caps.setCapability("project", "My First Project");
