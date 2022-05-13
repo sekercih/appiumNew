@@ -19,7 +19,7 @@ public class ChromeTest {
     public void test() throws MalformedURLException, InterruptedException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus_5");
+        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus5");
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");

@@ -15,20 +15,26 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class BrowserStackAndroid {
 
-    public static String userName = "hakkekerci_zMaN3P";
-    public static String accessKey = "aiYT2gsJHAUSSpb4S1CF";
+    public static String userName = "hakansekerli_OZiG7r";
+    public static String accessKey = "MGUqB3rrx4xxjPsRFofk";
 
     public static void main(String args[]) throws MalformedURLException, InterruptedException {
-        DesiredCapabilities caps = new DesiredCapabilities();
+       /* DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("browserName", "android");
         caps.setCapability("device", "Samsung Galaxy S8 Plus");
         caps.setCapability("os_version", "7.0");
         caps.setCapability("project", "My First Project");
         caps.setCapability("build", "My First Build");
         caps.setCapability("name", "Bstack-[Java] Sample Test");
-        caps.setCapability("app", "bs://95a02dd86ff22637fe5d372a7f82fb62de01c4eb");
+        caps.setCapability("app", "bs://5e05a9db8e9f6c7b6a718fa21f68a2a6646e1fd1"); */
 
-        AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps);
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("platformName", "android");
+        capabilities.setCapability("platformVersion", "10.0");
+        capabilities.setCapability("deviceName", "Samsung Galaxy Note 20");
+        capabilities.setCapability("app", "bs://24f20e84431d8c81f14ec1047dc0865444ed99d9");
+
+        AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), capabilities);
 /*
         AndroidElement searchElement = (AndroidElement) new WebDriverWait(driver, 30).until(
                 ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Search Wikipedia")));
